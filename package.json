@@ -1,0 +1,24 @@
+{
+  "name": "pokedex_be",
+  "version": "1.0.0",
+  "description": "Challenge for Natural Tech House by Axel Cerkvenih",
+  "main": "index.js",
+  "scripts": {
+    "test": "echo \"Error: no test specified\" && exit 1"
+  },
+  "repository": {
+    "type": "git",
+    "url": "git+https://github.com/cerkvenihaxel/pokedex_be.git"
+  },
+  "keywords": [
+    "pokedex",
+    "challenge",
+    "express"
+  ],
+  "author": "Axel Cerkvenih",
+  "license": "ISC",
+  "bugs": {
+    "url": "https://github.com/cerkvenihaxel/pokedex_be/issues"
+  },
+  "homepage": "https://github.com/cerkvenihaxel/pokedex_be#readme"
+}
