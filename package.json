@@ -2,9 +2,11 @@
   "name": "pokedex_be",
   "version": "1.0.0",
   "description": "Challenge for Natural Tech House by Axel Cerkvenih",
-  "main": "index.js",
+  "main": "index.ts",
   "scripts": {
-    "test": "echo \"Error: no test specified\" && exit 1"
+    "start": "ts-node-dev --respawn --transpile-only src/index.ts",
+    "test": "echo \"Error: no test specified\" && exit 1",
+    "dev": "ts-node-dev --respawn --transpile-only src/index.ts"
   },
   "repository": {
     "type": "git",
@@ -16,9 +18,24 @@
     "express"
   ],
   "author": "Axel Cerkvenih",
-  "license": "ISC",
+  "license": "MIT",
   "bugs": {
     "url": "https://github.com/cerkvenihaxel/pokedex_be/issues"
   },
-  "homepage": "https://github.com/cerkvenihaxel/pokedex_be#readme"
+  "homepage": "https://github.com/cerkvenihaxel/pokedex_be#readme",
+  "dependencies": {
+    "axios": "^1.6.8",
+    "cors": "^2.8.5",
+    "dotenv": "^16.4.5",
+    "express": "^4.19.2",
+    "express-jwt": "^8.4.1",
+    "ts-node": "^10.9.2",
+    "winston": "^3.13.0"
+  },
+  "devDependencies": {
+    "@types/cors": "^2.8.17",
+    "@types/express": "^4.17.21",
+    "ts-node-dev": "^2.0.0",
+    "typescript": "^5.4.4"
+  }
 }
