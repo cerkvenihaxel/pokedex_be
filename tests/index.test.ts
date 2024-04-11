@@ -1,7 +1,10 @@
 import supertest from 'supertest';
-import startServer from '../src/index'; // Assuming TypeScript
+import startServer from '../src/index'; 
 
 const api = supertest(startServer);
+
+
+// Unit tests for endpoints responses 
 describe('Greeting message', () => {
     test('It should respond with a greeting message', async () => {
       const response = await api.get('/status');
@@ -48,11 +51,11 @@ describe('Greeting message', () => {
     });
   });
 
-describe('Pokemon by ID', () => { // Added a comma after the opening parenthesis
+describe('Pokemon by ID', () => { 
     test('It should respond with a Pokemon object based on the provided ID', async () => {
-        const response = await api.get('/api/pokemon/2');
+        const response = await api.get('/api/pokemon/25');
         expect(response.status).toBe(200);
         expect(response.body).not.toBeNull();
-        expect(response.body.name).toBe('ivysaur');
+        expect(response.body.name).toBe('pikachu');
     });
 });
