@@ -8,12 +8,11 @@ This is a Pokedex app developed by Axel Cerkvenih. It is built using Node.js and
 - View detailed information about each Pokemon
 - Filter Pokemon by type, ability, or other attributes
 - Catch and collect Pokemon in your Pokedex
-- Train and level up your Pokemon
 
 ## Installation
 
 1. Clone the repository: `git clone https://github.com/axelcerkvenih/pokedex_be.git`
-2. Navigate to the project directory: `cd pokedex`
+2. Navigate to the project directory: `cd pokedex_be`
 3. Install dependencies: `npm install`
 
 ## Usage

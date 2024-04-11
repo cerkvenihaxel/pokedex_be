@@ -1,15 +1,13 @@
+// index.ts
 import express from "express";
 import config from "./config";
 import Logger from './loaders/logger';
+import loaders from './loaders';
 
-
-async function startServer() {
+const startServer = async () => {
     const app = express();
-
-
-    await require('./loaders').default({ expressApp: app });
-
-    app.listen(config.port, () => {
+    await loaders({ expressApp: app });
+    return app.listen(config.port, () => {
       Logger.info(`
         ################################################
         🛡️  Server listening on port: ${config.port} 🛡️
@@ -21,4 +19,8 @@ async function startServer() {
     });
 }
 
-startServer();
+if (require.main === module) {
+    startServer();
+}
+
+export default startServer;
