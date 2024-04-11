@@ -1,5 +1,6 @@
 # Pokedex NodeJS Express App
 
+![Pokedexel banner](https://i.imgur.com/9mHULEc.png)
 This is a Pokedex app developed by Axel Cerkvenih. It is built using Node.js and Express framework.
 
 ## Features
