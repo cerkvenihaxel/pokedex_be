@@ -1,21 +1,13 @@
 // index.test.ts
+import supertest from 'supertest';
 import startServer from '../src/index';
-import request from 'supertest';
-describe('Pokemon tests', () => {
-    let app: any;
 
-    beforeAll(async () => {
-        app = await startServer();
+const api = supertest(startServer);
+describe('GET /api/pokemon', () => {
+    it('should return a greeting message', async () => {
+        const res = await api.get('/api/pokemon');
+        expect(res.status).toBe(200);
+        expect(res.body).toHaveProperty('data');
+        expect(res.body.data).toBeInstanceOf(String);
     });
-
-    afterAll(async () => {
-        await app.close();
-    });
-    
-    it('responds with 200 and "Hello, Pokemon!" at /', async () => {
-        const response = await request(app).get('/api/pokemon');
-        expect(response.status).toBe(200);
-    });
-
-    // Add more tests for your routes and middleware here
 });

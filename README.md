@@ -6,8 +6,11 @@ This is a Pokedex app developed by Axel Cerkvenih. It is built using Node.js and
 
 - Search for Pokemon by name or ID
 - View detailed information about each Pokemon
-- Filter Pokemon by type, ability, or other attributes
-- Catch and collect Pokemon in your Pokedex
+- Filter Pokemon by name
+
+## Dependencies
+
+- Node v20.11.1
 
 ## Installation
 
@@ -18,7 +21,7 @@ This is a Pokedex app developed by Axel Cerkvenih. It is built using Node.js and
 ## Usage
 
 1. Start the server: `npm start`
-2. Open your browser and visit: `http://localhost:2229`
+2. For API documentation open your browser and visit: `http://localhost:2229/api-docs`
 
 ## Contributing
 
